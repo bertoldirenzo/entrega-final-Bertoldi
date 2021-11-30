@@ -1,0 +1,124 @@
+.contenedor{
+    padding: 0 10% 0 10%;
+    display: flexbox;
+    align-items: center;
+    font-family: 'Kaisei Opti', serif;
+    }
+.trabajos{
+    border: 1px solid seagreen;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+   }
+.trabajos .info{
+    width: 80%;
+}
+
+.trabajos .info h4{
+    color: palegreen ;
+    font-size: 1.3em;
+    font-style:oblique;
+    font-weight:bold;
+    margin: 0 0 1em;
+    border-bottom: 1px solid palegreen;
+    padding-bottom: 0.5em;  
+}
+
+.trabajos .info p{
+    font-size: 1em;
+    line-height: 1.2em;
+}
+.trabajos img{
+    border-radius: 0.8em;
+    width: 150px;
+    height: auto;
+}
+
+.trabajos:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.trabajos:nth-child(even) .info{
+    float: left;
+}
+
+.trabajos:nth-child(odd) img{
+    float: left;
+    margin: 0 0 0 1em;
+}
+
+.trabajos:nth-child(odd) .info{
+    float: right;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .contenedor{
+        padding: 0 10% 0 10%;
+        display: flexbox;
+        align-items: center;
+        font-family: 'Kaisei Opti', serif;
+        }
+    .trabajos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid seagreen;
+        border-radius: 0.7em;
+        margin: 1em 0;
+        padding: 0;
+        overflow: hidden;
+       }
+    .trabajos .info{
+        width: 80%;
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .trabajos .info h4{
+        color: palegreen ;
+        font-size: 1.3em;
+        font-style:oblique;
+        font-weight:bold;
+        margin: 0 0 0 0em;
+        border-bottom: 1px solid palegreen;
+        padding-bottom: 0em;  
+    }
+    
+    .trabajos .info p{
+        margin-top: 4px;
+        font-size: 1em;
+        line-height: 1.2em;
+        text-align:inherit;
+    }
+    .trabajos img{
+        padding-top: 5px;
+        border-radius: 0.8em;
+        width: 150px;
+        height: auto;
+    }
+    
+    .trabajos:nth-child(even) img{
+        float: none;
+        margin: 0 0 0 0;
+    }
+    
+    .trabajos:nth-child(even) .info{
+        float: none;
+    }
+    
+    .trabajos:nth-child(odd) img{
+        float: none;
+        margin: 0 0 0 0;
+    }
+    
+    .trabajos:nth-child(odd) .info{
+        float: none;
+    }   
+	
+}

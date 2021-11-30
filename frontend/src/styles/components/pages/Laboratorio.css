@@ -1,0 +1,124 @@
+.contenedor{
+    padding: 0 10% 0 10%;
+    display: flexbox;
+    align-items: center;
+    font-family: 'Kaisei Opti', serif;
+    }
+.laboratorio{
+    border: 1px solid seagreen;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+   }
+.laboratorio .info{
+    width: 80%;
+}
+
+.laboratorio .info h4{
+    color: palegreen ;
+    font-size: 1.3em;
+    font-style:oblique;
+    font-weight:bold;
+    margin: 0 0 1em;
+    border-bottom: 1px solid palegreen;
+    padding-bottom: 0.5em;  
+}
+
+.laboratorio .info p{
+    font-size: 1em;
+    line-height: 1.2em;
+}
+.laboratorio img{
+    border-radius: 0.8em;
+    width: 150px;
+    height: auto;
+}
+
+.laboratorio:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.laboratorio:nth-child(even) .info{
+    float: left;
+}
+
+.laboratorio:nth-child(odd) img{
+    float: left;
+    margin: 0 0 0 1em;
+}
+
+.laboratorio:nth-child(odd) .info{
+    float: right;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .contenedor{
+        padding: 0 10% 0 10%;
+        display: flexbox;
+        align-items: center;
+        font-family: 'Kaisei Opti', serif;
+        }
+    .laboratorio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid seagreen;
+        border-radius: 0.7em;
+        margin: 1em 0;
+        padding: 0;
+        overflow: hidden;
+       }
+    .laboratorio .info{
+        width: 80%;
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .laboratorio .info h4{
+        color: palegreen ;
+        font-size: 1.3em;
+        font-style:oblique;
+        font-weight:bold;
+        margin: 0 0 0 0em;
+        border-bottom: 1px solid palegreen;
+        padding-bottom: 0em;  
+    }
+    
+    .laboratorio .info p{
+        margin-top: 4px;
+        font-size: 1em;
+        line-height: 1.2em;
+        text-align:inherit;
+    }
+    .laboratorio img{
+        border-radius: 0.8em;
+        width: 150px;
+        height: auto;
+    }
+    
+    .laboratorio:nth-child(even) img{
+        float: none;
+        margin: 0 0 0 0;
+    }
+    
+    .laboratorio:nth-child(even) .info{
+        float: none;
+    }
+    
+    .laboratorio:nth-child(odd) img{
+        float: none;
+        margin: 0 0 0 0;
+    }
+    
+    .laboratorio:nth-child(odd) .info{
+        float: none;
+    }   
+	
+}
+
